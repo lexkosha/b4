@@ -56,7 +56,7 @@ def connect_db():
     # создаем описанные таблицы
     Base.metadata.create_all(engine)
     # создаем фабрику сессию
-    session =sessionmaker(engine)
+    session = sessionmaker(engine)
     # возвращаем сессию
     return session()
 
